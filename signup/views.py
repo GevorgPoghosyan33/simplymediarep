@@ -11,7 +11,7 @@ def signup(request):
             return redirect('login-page')
     else:
         signup_form = UserCreationForm()
-        return render(request, 'signup/signup-page.html', {'form':signup_form})
+    return render(request, 'signup/signup-page.html', {'form':signup_form})
 
 def loginpage(request):
     return render(request, 'signup/login-page.html')
