@@ -1,26 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simplify - Log in</title>
+    <link rel="stylesheet" href="{% static 'signup/signup-page.css' %}">
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Log in </h2>
+    <h2 class="inactive underlineHover">Sign up</h2>
 
-<!--<div class="wrapper fadeInDown">-->
-<!--  <div id="formContent">-->
-<!--    &lt;!&ndash; Tabs Titles &ndash;&gt;-->
-<!--    <h2 class="active"> Log in </h2>-->
-<!--    <h2 class="inactive underlineHover">Sign up</h2>-->
+    <!-- Icon -->
+    <div class="fadeIn first">
+<!--      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />-->
+    </div>
 
-<!--    &lt;!&ndash; Icon &ndash;&gt;-->
-<!--    <div class="fadeIn first">-->
-<!--&lt;!&ndash;      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />&ndash;&gt;-->
-<!--    </div>-->
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log in">
+    </form>
 
-<!--    &lt;!&ndash; Login Form &ndash;&gt;-->
-<!--    <form>-->
-<!--      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">-->
-<!--      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">-->
-<!--      <input type="submit" class="fadeIn fourth" value="Log in">-->
-<!--    </form>-->
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
 
-<!--    &lt;!&ndash; Remind Passowrd &ndash;&gt;-->
-<!--    <div id="formFooter">-->
-<!--      <a class="underlineHover" href="#">Forgot Password?</a>-->
-<!--    </div>-->
+  </div>
+</div>
 
-<!--  </div>-->
-<!--</div>-->
+
+</body>
+</html>
