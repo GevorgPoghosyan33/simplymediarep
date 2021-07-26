@@ -19,10 +19,19 @@
     </div>
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log in">
+    <form method="POST">
+        {% csrf_token %}
+<!--      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">-->
+<!--      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">-->
+<!--      <input type="submit" class="fadeIn fourth" value="Sign up">-->
+       {{ form }}
+        <input type="submit" value="Register">
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+<!--      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">-->
+<!--      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">-->
+<!--      <input type="submit" class="fadeIn fourth" value="Log in">-->
     </form>
 
     <!-- Remind Passowrd -->

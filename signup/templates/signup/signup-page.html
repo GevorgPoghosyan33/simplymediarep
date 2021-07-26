@@ -26,6 +26,9 @@
 <!--      <input type="submit" class="fadeIn fourth" value="Sign up">-->
        {{ form }}
         <input type="submit" value="Register">
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
     </form>
 
     <!-- Remind Passowrd -->
